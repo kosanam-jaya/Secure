@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { Search, Filter, ArrowDownUp, FolderOpen, Star, Download, Trash2, Eye } from 'lucide-react';
+import { Search, Filter, ArrowDownUp, FolderOpen, Trash2 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useToast } from '@/context/ToastContext';
 import { DocumentCard } from '@/components/DocumentCard';

@@ -10,12 +10,12 @@ import { FileIcon } from '@/components/FileIcon';
 import { DocumentCard } from '@/components/DocumentCard';
 import { DocumentCardSkeleton } from '@/components/Skeleton';
 import { UploadModal } from '@/components/UploadModal';
-import { formatBytes, formatDate, timeAgo } from '@/lib/utils';
+import { formatBytes, formatDate } from '@/lib/utils';
 import { CATEGORIES, type Document } from '@/types';
 import { cn } from '@/lib/utils';
 
 export function DashboardPage() {
-  const { profile, user } = useAuth();
+  const { profile } = useAuth();
   const [docs, setDocs] = useState<Document[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploadOpen, setUploadOpen] = useState(false);

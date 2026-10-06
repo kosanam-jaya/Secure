@@ -7,7 +7,7 @@ import {
 import { supabase } from '@/lib/supabase';
 import { useToast } from '@/context/ToastContext';
 import { FileIcon } from '@/components/FileIcon';
-import { formatBytes, formatDate, formatDateTime, getFileExtension } from '@/lib/utils';
+import { formatBytes, formatDate, getFileExtension } from '@/lib/utils';
 import { CATEGORIES, type Document, type DocumentCategory } from '@/types';
 import { cn } from '@/lib/utils';
 import { logActivity } from '@/lib/activity';
